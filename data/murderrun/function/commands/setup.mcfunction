@@ -23,7 +23,6 @@
 
 
 # Scoreboard Objectives
-
 	# Hiders List
 		scoreboard objectives add hidersList dummy
 		scoreboard objectives setdisplay sidebar hidersList
