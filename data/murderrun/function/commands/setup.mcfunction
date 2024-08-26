@@ -23,11 +23,16 @@
 
 
 # Scoreboard Objectives
-	scoreboard objectives add hidersList dummy
-	scoreboard objectives setdisplay sidebar hidersList
-	scoreboard objectives modify hidersList displayname {"text":"Run...","color":"dark_red","bold":true}
-	scoreboard players set §e§lAlive hidersList 0
-	scoreboard players set §e§l---------- hidersList -1
+
+	# Hiders List
+		scoreboard objectives add hidersList dummy
+		scoreboard objectives setdisplay sidebar hidersList
+		scoreboard objectives modify hidersList displayname {"text":"Run...","color":"dark_red","bold":true}
+		scoreboard players set §e§lAlive hidersList 0
+		scoreboard players set §e§l---------- hidersList -1
+
+	# Sneak Time
+		scoreboard objectives add sneakTime minecraft.custom:minecraft.sneak_time
 
 # After Load
 	tellraw @a {"text":"Setup Function Loaded","color":"yellow","bold":true}
