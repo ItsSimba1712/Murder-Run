@@ -8,4 +8,4 @@
 	tellraw @a[team=hiders] {"text":"Glow Trap Activated!","color":"yellow","bold":true}
 
 # Play 'Ding' Sound
-	playsound minecraft:entity.experience_orb.pickup player @a ~ ~ ~ 1 1 1
+	execute as @a[team=hiders] at @s run playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 1 1 1
