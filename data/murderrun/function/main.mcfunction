@@ -16,8 +16,3 @@
 
 # Scoreboard Resets (end of file)
 	execute if entity @a[scores={sneakTime=1..}] run scoreboard players reset @a[scores={sneakTime=1..}] sneakTime
-
-
-
-
-
